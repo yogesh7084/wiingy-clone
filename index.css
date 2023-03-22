@@ -38,11 +38,13 @@
 .left-container {
   width: 50%;
   /* background-color: blue; */
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .left-container>button {
   height: 50px;
-  width: 180px;
+  width: 200px;
   border-radius: 4px;
   border: none;
   background-color: #2351A3;
@@ -291,8 +293,8 @@
   margin-top: 100px;
   box-sizing: border-box;
   display: flex;
-  flex-direction: row;
 
+  justify-content: space-around ;
 }
 
 
@@ -300,8 +302,12 @@
   line-height: 1.5;
 }
 
+.leftContainer{
+  padding-top: 100px;
+}
+
 .freeTrial {
-  margin-top: 100px;
+  margin-top: 50px;
   border-radius: 3%;
   background-color: blue;
   border: none;
@@ -311,20 +317,21 @@
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
+  margin-left: 3rem;
 }
 
 .rightContainer {
-  margin-left: 400px;
+  /* margin-left: 400px; */
   border: 1px solid rgba(128, 128, 128, 0.4);
   border-radius: 20px;
   padding-bottom: 10px;
 }
 
-.rightContainer>p,
+/* .rightContainer>p,
 button {
   margin-left: 40px;
   border: none;
-}
+} */
 
 .rightContainer>img {
   height: 300px;
@@ -354,7 +361,6 @@ button {
   }
 
   .rightContainer {
-    margin-left: 40px;
     margin-top: 100px;
   }
   .rightContainer>img {
