@@ -6,31 +6,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Robotics</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+
     <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
 
     <!-- For NavBar -->
-    <div class="header">
-
-        <nav>
-            <h2 class="logo">Wiingy</h2>
-            <ul class="nav-list">
-                <li> <a href="#">Tutoring</a></li>
-                <li> <a href="#">Courses</a></li>
-                <li> <a href="#">Resources</a></li>
-                <li> <a href="#">Learn</a></li>
-                <li> <a href="#">Blog</a></li>
-
-            </ul>
-            <div>
-                <img class="logo-location" src="assets/icon.jpg" alt="US">
-                <a href="https://www.google.com/maps">US</a>
+    
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand logo" href="#">Robonist</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Courses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Learn</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Q&A</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">FAQ</a>
+                    </li>
+                </ul>
             </div>
-
+        </div>
         </nav>
-    </div>
 
     <!-- For body content -->
     <div class="top-container">
@@ -65,43 +78,46 @@
         </div>
     </div>
 
-    <h2 class="sub-heading">Course Structure for Coding</h2>
-    <div class="container-2">
-        <div class="course-1">
-            <div class="div-course-structure">
-                <img src="https://wiingy.com/_next/static/media/calendar.1f655667.svg">
-                <b>Twice</b>
-                <p> per week</p><br>
-                <img src="https://wiingy.com/_next/static/media/cake.8b79672b.svg">
-                <b>Grades</b>
-                <p> 1-8</p><br>
-                <img src="https://wiingy.com/_next/static/media/certificate.9af3f2b3.svg">
-                <b>Certification</b>
-                <p> after completion</p><br>
+    <div id="courseStructure">
+        <h2 class="sub-heading">Course Structure for Coding</h2>
+        <div class="container-2">
+            <div class="course-1">
+                <div class="div-course-structure">
+                    <img src="https://wiingy.com/_next/static/media/calendar.1f655667.svg">
+                    <b>Twice</b>
+                    <p> per week</p><br>
+                    <img src="https://wiingy.com/_next/static/media/cake.8b79672b.svg">
+                    <b>Grades</b>
+                    <p> 1-8</p><br>
+                    <img src="https://wiingy.com/_next/static/media/certificate.9af3f2b3.svg">
+                    <b>Certification</b>
+                    <p> after completion</p><br>
+                </div>
+
+            </div>
+
+            <div class="course-2">
+                <div class="div-course-structure">
+                    <img src="https://wiingy.com/_next/static/media/laptop.a6ccf90f.svg">
+                    <b>24 Live Classes</b>
+                    <p>in total</p><br>
+                    <img src="https://wiingy.com/_next/static/media/learner-teacher.dfeab4ab.svg">
+                    <b>1:1 learner teache</b>
+                    <p> per class</p><br>
+                    <img src="https://wiingy.com/_next/static/media/clock.011e73d5.svg">
+                    <b>60 minutes</b>
+                    <p>per class</p><br>
+                </div>
+            </div>
+            <div class="course-3">
+                <h2>Starts from $20 </h2>
+                <h2>per class per learner</h2>
+                <button><strong>Enroll Now</strong></button>
             </div>
 
         </div>
-
-        <div class="course-2">
-            <div class="div-course-structure">
-                <img src="https://wiingy.com/_next/static/media/laptop.a6ccf90f.svg">
-                <b>24 Live Classes</b>
-                <p>in total</p><br>
-                <img src="https://wiingy.com/_next/static/media/learner-teacher.dfeab4ab.svg">
-                <b>1:1 learner teache</b>
-                <p> per class</p><br>
-                <img src="https://wiingy.com/_next/static/media/clock.011e73d5.svg">
-                <b>60 minutes</b>
-                <p>per class</p><br>
-            </div>
-        </div>
-        <div class="course-3">
-            <h2>Starts from $20 </h2>
-            <h2>per class per learner</h2>
-            <button><strong>Enroll Now</strong></button>
-        </div>
-
     </div>
+
     <!-- For Middle section part -->
     <!-- For Middle section part -->
     <!-- For Middle section part -->
@@ -120,10 +136,14 @@
             </div>
             <div class="rightContainer">
                 <div class="mySlides">
-                    <img  src="assets/Nupur.webp" style="width:100% ">
+                    <img src="assets/Nupur.webp" style="width:100% ">
                     <div class="Slidecontainer">
-                        <div class="SlideLearn1"><h3>Navya Devi</h3></div>
-                        <div class="SlideLearn2"><h4>4.9 ⭐⭐⭐⭐⭐</h4></div>
+                        <div class="SlideLearn1">
+                            <h3>Navya Devi</h3>
+                        </div>
+                        <div class="SlideLearn2">
+                            <h4>4.9 ⭐⭐⭐⭐⭐</h4>
+                        </div>
                         <div class="SlideLearn3"><a>B.E ,Computer Science Engineer</a></div>
                         <div class="SlideButton">
                             <div class="SlideButton1"> Python </div>
@@ -136,12 +156,16 @@
                 <div class="mySlides">
                     <img src="assets/Navya_Devi.webp" style="width:100%">
                     <div class="Slidecontainer">
-                        <div class="SlideLearn1"><h3>Navya Devi</h3></div>
-                        <div class="SlideLearn2"><h4>4.9 ⭐⭐⭐⭐⭐</h4></div>
+                        <div class="SlideLearn1">
+                            <h3>Navya Devi</h3>
+                        </div>
+                        <div class="SlideLearn2">
+                            <h4>4.9 ⭐⭐⭐⭐⭐</h4>
+                        </div>
                         <div class="SlideLearn3"><a>M.Tech,Computer Science Engineer</a></div>
                         <div class="SlideButton">
                             <div class="SlideButton2"> Java </div>
-                            <div class="SlideButton1"> Python </div>                               
+                            <div class="SlideButton1"> Python </div>
                             <div class="SlideButton3"> App Dev </div>
                         </div>
                     </div>
@@ -150,8 +174,12 @@
                 <div class="mySlides">
                     <img src="assets/Vishruti.webp" style="width:100%">
                     <div class="Slidecontainer">
-                        <div class="SlideLearn1"><h3>Vishruti</h3></div>
-                        <div class="SlideLearn2"><h4>4.9 ⭐⭐⭐⭐⭐</h4></div>
+                        <div class="SlideLearn1">
+                            <h3>Vishruti</h3>
+                        </div>
+                        <div class="SlideLearn2">
+                            <h4>4.9 ⭐⭐⭐⭐⭐</h4>
+                        </div>
                         <div class="SlideLearn3"><a>BCA,Computer Science Engineer</a></div>
                         <div class="SlideButton">
                             <div class="SlideButton1"> Python </div>
@@ -160,25 +188,25 @@
                     </div>
                 </div>
 
-                 <!--Slide Script-->
+                <!--Slide Script-->
 
-                 <script>
+                <script>
                     var myIndex = 0;
                     carousel();
-                    
+
                     function carousel() {
-                      var i;
-                      var x = document.getElementsByClassName("mySlides");
-                      for (i = 0; i < x.length; i++) {
-                        x[i].style.display = "none";  
-                      }
-                      myIndex++;
-                      if (myIndex > x.length) {myIndex = 1}    
-                      x[myIndex-1].style.display = "block";  
-                      setTimeout(carousel, 2000); // Change image every 2 seconds
+                        var i;
+                        var x = document.getElementsByClassName("mySlides");
+                        for (i = 0; i < x.length; i++) {
+                            x[i].style.display = "none";
+                        }
+                        myIndex++;
+                        if (myIndex > x.length) { myIndex = 1 }
+                        x[myIndex - 1].style.display = "block";
+                        setTimeout(carousel, 2000); // Change image every 2 seconds
                     }
-                    </script>
-                    
+</script>
+
             </div>
         </div>
     </section>
@@ -193,63 +221,65 @@
             <div class="mid-container2">
                 <div class="container1">
                     <p>
-                        <h3>What Is Robotics For Kids?</h3>
-                        <br>
-                        Robotics for kids is an upcoming field of study that many parents want their kids to learn.
-                        In online robotics classes for kids learners apply principles of maths, science, coding &
-                        mechanic to create real robots. As this is a multi-disciplinary field,taking robotics
-                        classes helps learners get a basic understanding of coding and enhances their mathematical
-                        skills as well.
+                    <h3>What Is Robotics For Kids?</h3>
+                    <br>
+                    Robotics for kids is an upcoming field of study that many parents want their kids to learn.
+                    In online robotics classes for kids learners apply principles of maths, science, coding &
+                    mechanic to create real robots. As this is a multi-disciplinary field,taking robotics
+                    classes helps learners get a basic understanding of coding and enhances their mathematical
+                    skills as well.
                     </p>
                 </div>
                 <div class="container2">
                     <p>
-                        <h3>Benefits of Robotics For Kids</h3>
-                        <br>
-                        Robotics is a multidisciplinary field involving the study and application of math, coding,
-                        electronics and mechanics. Robotics is useful for Kids as kids who take up robotics,
-                        therefore,develop a wide knowledge and skills particularly critical thinking and creative
-                        skills. Starting early with robotics is also known to help develop motor skills in kids.
+                    <h3>Benefits of Robotics For Kids</h3>
+                    <br>
+                    Robotics is a multidisciplinary field involving the study and application of math, coding,
+                    electronics and mechanics. Robotics is useful for Kids as kids who take up robotics,
+                    therefore,develop a wide knowledge and skills particularly critical thinking and creative
+                    skills. Starting early with robotics is also known to help develop motor skills in kids.
                     </p>
                 </div>
             </div>
             <div class="container5">
                 <div class="container4">
                     <p>
-                        <h3>Right age to start Robotics for kids</h3>
-                        <br>
-                        Kids can start learning robotics from age 5 onwards. At age 5 kids can be introduced to
-                        building blocks of robotics such as the input sensors, microcontrollers and output devices.
-                        From age 7 onwards, kids can be introduced to Basic circuit design and simulation using a
-                        simulation software like Tinkercad. Further on form age 9-10 onwards kids can be introduced
-                        to designing and programming physical robotics using a micro controller such as a BBC
-                        micro:bit or arduino uno.
+                    <h3>Right age to start Robotics for kids</h3>
+                    <br>
+                    Kids can start learning robotics from age 5 onwards. At age 5 kids can be introduced to
+                    building blocks of robotics such as the input sensors, microcontrollers and output devices.
+                    From age 7 onwards, kids can be introduced to Basic circuit design and simulation using a
+                    simulation software like Tinkercad. Further on form age 9-10 onwards kids can be introduced
+                    to designing and programming physical robotics using a micro controller such as a BBC
+                    micro:bit or arduino uno.
                     </p>
                 </div>
                 <div class="container3">
                     <p>
-                        <h3>Future of robotics for kids</h3>
-                        <br>
-                        Robotics and robots have a wide range of applications. Robots are no longer limited to
-                        industrial usages such as in manufacturing or warehouses but are rapidly becoming a part of
-                        the household. Case in point is automated home robots for home cleaning, grill cleaning,
-                        pool cleaning and lawn moving.Robots are also available as pets for kids. Sensors which are
-                        the basic building blocks of robots are used extensively in automobiles, locking systems,
-                        and household electronics.
-                        <br>
-                        As per world economic forum, future of jobs report 2020 AI and machine learning specialists
-                        and process automation specialists are among top 5 jobs worldwide with increasing demand.
-                        Learning robotics for kids therefore opens up doors to a lot of future job opportunities in
-                        the field of industrial automation, warehousing, defence, automobiles and home automation.
+                    <h3>Future of robotics for kids</h3>
+                    <br>
+                    Robotics and robots have a wide range of applications. Robots are no longer limited to
+                    industrial usages such as in manufacturing or warehouses but are rapidly becoming a part of
+                    the household. Case in point is automated home robots for home cleaning, grill cleaning,
+                    pool cleaning and lawn moving.Robots are also available as pets for kids. Sensors which are
+                    the basic building blocks of robots are used extensively in automobiles, locking systems,
+                    and household electronics.
+                    <br>
+                    As per world economic forum, future of jobs report 2020 AI and machine learning specialists
+                    and process automation specialists are among top 5 jobs worldwide with increasing demand.
+                    Learning robotics for kids therefore opens up doors to a lot of future job opportunities in
+                    the field of industrial automation, warehousing, defence, automobiles and home automation.
                     </p>
                 </div>
             </div>
             <!--  -->
             <div class="container10">
-                <h2> <h3> Robotics And Maths</h3> </h2>
+                <h2>
+                    <h3> Robotics And Maths</h3>
+                </h2>
                 <p>
-                    <h3> Does robotics require a lot of math?</h3>
-                    <br>
+                <h3> Does robotics require a lot of math?</h3>
+                <br>
                 <p>This is one of the most common queries parents ask when signing up for our robotics classes for kids.
                     Robotics is a multi-disciplinary field involving application of all STEM blocks (Science,
                     Technology, Engineer, Mathematics). In a typical robotics course, kids will learn about the
@@ -259,7 +289,9 @@
                     robotics. Heavy math is required only if you are taking advanced robotics and designing complex
                     robots for scientific or industrial purposes.
                 </p>
-                <h2> <h3> Difference between robot and robotics</h3> </h2>
+                <h2>
+                    <h3> Difference between robot and robotics</h3>
+                </h2>
                 <p>
                     A robot is a programmable device that can complete a specified task or task. A typical robot
                     consists of sensors such as light and sound sensors, a microcontroller and output devices such as
@@ -267,89 +299,95 @@
                     semi-autonomous to fully autonomous.By extension Robotics is the field of study of design and
                     application of Robots.</p>
                 <br>
-                <h2><h3>What are the best robots for kids</h3> </h2>
+                <h2>
+                    <h3>What are the best robots for kids</h3>
+                </h2>
                 <p>
                     Each year new robotic kids for kids are released. We have curated the Top 8 robots based on a range
                     of parameters. Refer to our guide <a
                         href="https://wiingy.com/blog/top-8-robotic-kits-for-kids/"></a> to the best robotic kits for
                     beginners
                 </p>
-                <h2> <h3>Robotics Claases For Kids</h3></h2>
+                <h2>
+                    <h3>Robotics Claases For Kids</h3>
+                </h2>
                 <p>
-                    <h3> What are robotics classes for kids?</h3>
-                    <br>
-                    Online Robotics classes for kids are part of a structured robotics course for kids where kids can
-                    learn the fundamentals of robotics in a 1:1 live online class format.
-                    <br> <br>
-                    <h3 class="hdd2">Is Robotics class good for kids?</h3>
-                    <br>
-                    Robotics classes for kids are essential as robotics is not an easy field for self-learning specially
-                    for kids. A structured robotics course is essential for kids to start learning robotics. Robotics
-                    classes for kids help in three key areas:
-                    <br>
-                    1. Helps build multidisciplinary knowledge in coding, math, mechanics, electronics and mechanics
-                    <br>
-                    2. Helps build fundamentals skills of critical thinking and creativity
-                    <br>
-                    3. Opens door to a range of jobs of future (As per WEF Future of jobs report 2020, robotics & AI is
-                    among the top job areas with increasing demand)
-                    <br>
-                    <br>
-                    <h3 class="hdd2">what are disadvanatges of robotics classes for kids</h3>
-                    <br>
-                    Well learning can never be disadvantageous. In-fact robotics classes for kids can be highly
-                    beneficial for kids as besides building STEM knowledge and fundamental creative and
-                    critical-thinking skills, robotics classes also helps in building motor skills in young children.
-                    <br>
+                <h3> What are robotics classes for kids?</h3>
+                <br>
+                Online Robotics classes for kids are part of a structured robotics course for kids where kids can
+                learn the fundamentals of robotics in a 1:1 live online class format.
+                <br> <br>
+                <h3 class="hdd2">Is Robotics class good for kids?</h3>
+                <br>
+                Robotics classes for kids are essential as robotics is not an easy field for self-learning specially
+                for kids. A structured robotics course is essential for kids to start learning robotics. Robotics
+                classes for kids help in three key areas:
+                <br>
+                1. Helps build multidisciplinary knowledge in coding, math, mechanics, electronics and mechanics
+                <br>
+                2. Helps build fundamentals skills of critical thinking and creativity
+                <br>
+                3. Opens door to a range of jobs of future (As per WEF Future of jobs report 2020, robotics & AI is
+                among the top job areas with increasing demand)
+                <br>
+                <br>
+                <h3 class="hdd2">what are disadvanatges of robotics classes for kids</h3>
+                <br>
+                Well learning can never be disadvantageous. In-fact robotics classes for kids can be highly
+                beneficial for kids as besides building STEM knowledge and fundamental creative and
+                critical-thinking skills, robotics classes also helps in building motor skills in young children.
+                <br>
 
                 </p>
                 </p>
                 <!--  -->
             </div>
-            <h2> <h3>FAQs on learning Robotics For Kids </h3></h2>
+            <h2>
+                <h3>FAQs on learning Robotics For Kids </h3>
+            </h2>
             <div class="container9">
                 <div class="container7">
                     <p>
-                        <h3> What do kids learn in robotics? </h3>
-                        <br>
-                        Robotics for kids is a multidisciplinary field. Kids learn design simulations of circuits,
-                        fundamentals of electronics, the function of sensors, microcontroller programming and
-                        mechanics in Robotics.
+                    <h3> What do kids learn in robotics? </h3>
+                    <br>
+                    Robotics for kids is a multidisciplinary field. Kids learn design simulations of circuits,
+                    fundamentals of electronics, the function of sensors, microcontroller programming and
+                    mechanics in Robotics.
 
                     </p>
                     <p>
-                        <h3 class="hdd">How can kids learn robotics for free? </h3>
-                        <br>
-                        There are plenty of online resources available which can help kids to learn robotics online
-                        for free. You need to look for learning resources specific to the platform you chose.
-                        <br>
-                        Whether its free classes or paid classes, you will however need to purchase a robotics kit
-                        to get started. If you are starting with Arduino look up lessons on Arduino education. If
-                        you are starting with BBC micro:bit refer the official page for free tutorials. They have
-                        plenty of do-along tutorials for one to get the basic understanding of robotics.
-                        <br>
-                        If you are more serious about building a solid foundation of robotics for your child we
-                        recommend you sign up for Wiingy’s robotics course for kids. Enrolling in these robotics
-                        classes for kids will ensure that your child undertakes studies via a structured curriculum
-                        with expert and qualified tutors.
+                    <h3 class="hdd">How can kids learn robotics for free? </h3>
+                    <br>
+                    There are plenty of online resources available which can help kids to learn robotics online
+                    for free. You need to look for learning resources specific to the platform you chose.
+                    <br>
+                    Whether its free classes or paid classes, you will however need to purchase a robotics kit
+                    to get started. If you are starting with Arduino look up lessons on Arduino education. If
+                    you are starting with BBC micro:bit refer the official page for free tutorials. They have
+                    plenty of do-along tutorials for one to get the basic understanding of robotics.
+                    <br>
+                    If you are more serious about building a solid foundation of robotics for your child we
+                    recommend you sign up for Wiingy’s robotics course for kids. Enrolling in these robotics
+                    classes for kids will ensure that your child undertakes studies via a structured curriculum
+                    with expert and qualified tutors.
                     </p>
                 </div>
                 <div class="container8">
                     <p>
-                        <h3>
-                            how can kids learn robotics?
-                        </h3>
-                        <br>
-                        There are many ways to start your child in robotics.One of the first steps to getting your
-                        child involved in robotics is to identify the robotics platform. Two of the most popular
-                        robotics platforms for educationare BBC micro:bit and Arduino. Once the platform is
-                        identified you need to find a compatible coding environment. Microsoft makecode is specially
-                        designed for micro:bit and arduino has its own coding environment called Arduino IDE.
-                        Arduino IDE uses text based coding and this can be a bit tough for new learners. Therefore a
-                        good instructor and a curriculum and help fast track the learning journey.If you want a
-                        professional instructor for your child, enrol for Wiingy’s robotics classes for kids. You
-                        can evaluate the course by signing up for a free demo class as well.
-                        <br>
+                    <h3>
+                        how can kids learn robotics?
+                    </h3>
+                    <br>
+                    There are many ways to start your child in robotics.One of the first steps to getting your
+                    child involved in robotics is to identify the robotics platform. Two of the most popular
+                    robotics platforms for educationare BBC micro:bit and Arduino. Once the platform is
+                    identified you need to find a compatible coding environment. Microsoft makecode is specially
+                    designed for micro:bit and arduino has its own coding environment called Arduino IDE.
+                    Arduino IDE uses text based coding and this can be a bit tough for new learners. Therefore a
+                    good instructor and a curriculum and help fast track the learning journey.If you want a
+                    professional instructor for your child, enrol for Wiingy’s robotics classes for kids. You
+                    can evaluate the course by signing up for a free demo class as well.
+                    <br>
                     </p>
                 </div>
             </div>

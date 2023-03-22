@@ -5,81 +5,21 @@
 }
 /* For Header/ Navbar part */
 
-.header {
-  width: 100%;
-  height: 60px;
-  position: fixed;
-  background-color: #EEECEB;
-  top: 0;
+.container-fluid{
+  padding: 1% 10% 2%;
 }
 
-nav{
-  margin: auto;
-  display: flex;
-  width: 100%;
-  /* gap: 10%; */
-  align-items: center;
-  /* justify-content: space-between; */
-  /* padding: 80px; */
-  /* padding-left: 20px; */
-  /* padding-right: 20px; */
-}
-nav>*{
-  margin-left: 6%;
-  margin-right: 6%;
-}
+
+/* .navbar {
+  padding: 3% 15% 2%;
+} */
 
 .logo {
   color: #2351A3;
   font-size: 38px;
+  padding-right: 40%;
 }
 
-nav {
-  margin: auto;
-}
-
-nav>a {
-  position: relative;
-  right: 0;
-}
-
-nav ul li {
-  list-style-type: none;
-  display: inline-block;
-  padding: 10px 20px;
-
-}
-
-nav ul li a {
-  color: black;
-  text-decoration: none;
-
-}
-
-nav ul li a:hover{
-  transition: .3s;
-}
-
-.logo-location {
-  width: 18px;
-  height: 20px;
-  background-color: #0077B5;
-}
-
-@media (max-width: 800px) {
-  .header{
-    width: calc(100%-40px);
-  }
-  .nav-list{
-    display: none;
-  }
-  nav{
-    justify-content: space-between;
-  }
-  body{
-    overflow-x: hidden;
-  }
-}
 
 /* For Body Content */
 /* For Body Content */
