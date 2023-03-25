@@ -250,7 +250,7 @@ nav ul li a:hover{
   margin: auto;
   /* padding: 0 15px 0 15px; */
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   flex-wrap: wrap;
   gap: 10px;
 }
@@ -354,7 +354,8 @@ nav ul li a:hover{
   box-sizing: border-box;
   display: flex;
   flex-direction: row;
-
+  justify-content: space-around;
+  gap: 200px;
 }
 
 
@@ -376,7 +377,7 @@ nav ul li a:hover{
 }
 
 .rightContainer {
-  margin-left: 400px;
+  /* margin-left: 400px; */
   border: 1px solid rgba(128, 128, 128, 0.4);
   border-radius: 20px;
   padding-bottom: 10px;
