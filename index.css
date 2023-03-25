@@ -388,6 +388,7 @@ button {
   border: none;
 }
 
+
 .rightContainer>img {
   height: 300px;
   background-size: cover;
@@ -413,10 +414,11 @@ button {
 @media (max-width: 800px) {
   .container01 {
     flex-direction: column;
+    justify-content: center;
   }
 
   .rightContainer {
-    margin-left: 40px;
+    margin-left: auto;
     margin-top: 100px;
   }
   .rightContainer>img {
@@ -482,7 +484,7 @@ button {
 }
 .container8{
   width: 48%;
-  margin-left: 20px;
+  /* margin-left: 20px; */
 }
 
 .hdd{
